@@ -3,14 +3,16 @@ import asyncio
 import requests
 import random
 
-SUBREDDIT = ''
-TOTAL_MEMES = 
-FOLDER_NAME = ''
-VALID_SYM = ''
-LIMIT = 
+
+SUBREDDIT = '' # the subreddit from which you want the memes.
+TOTAL_MEMES =   # the initial amount of memes the bot picks up.
+FOLDER_NAME = '' # the folder you are gonna store memes in (is needed to be created before hand)
+VALID_SYM = 'abcdefghijklmnopqrstuvwxyz' # to avoid naming errors 
+LIMIT =  # the amount memes you want to store in the folder
 
 
 async def main():
+    # create an application here - https://www.reddit.com/prefs/apps to get access to this
     reddit = asyncpraw.Reddit(
         client_id='',
         client_secret='',
