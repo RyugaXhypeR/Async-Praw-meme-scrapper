@@ -2,11 +2,12 @@ import asyncpraw
 import asyncio
 import requests
 import random
+from string import ascii_letters
 
 SUBREDDIT = ''
 TOTAL_MEMES = 
 FOLDER_NAME = ''
-VALID_SYM = 'abcdefhijklmnopqrstuvwxyz'
+VALID_SYM = ascii_letters()
 LIMIT = 
 
 
@@ -32,7 +33,7 @@ async def main():
         url = submission[i].url
 
         for j in title:
-            if j.lower() not in VALID_SYM:
+            if j not in VALID_SYM:
                 title = title.replace(j, '-')
 
         print(f"{i+1}. {url}")
