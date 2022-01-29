@@ -6,7 +6,7 @@ import random
 SUBREDDIT = ''
 TOTAL_MEMES = 
 FOLDER_NAME = ''
-VALID_SYM = ''
+VALID_SYM = 'abcdefhijklmnopqrstuvwxyz'
 LIMIT = 
 
 
