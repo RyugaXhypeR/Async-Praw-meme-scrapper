@@ -7,7 +7,7 @@ from string import ascii_letters
 SUBREDDIT = ''
 TOTAL_MEMES = 
 FOLDER_NAME = ''
-VALID_SYM = ascii_letters()
+VALID_SYM = ascii_letters
 LIMIT = 
 
 
